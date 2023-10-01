@@ -1,5 +1,4 @@
 package nz.ac.vuw.swen301.tuts.log4j;
-
 import org.apache.log4j.*;
 
 import java.io.BufferedReader;
@@ -35,7 +34,7 @@ public class MergeTransactions {
 		// add ConsoleLayout Appender to TRANSACTION logger using SimpleLayout
 		TRANSACTION.addAppender(new org.apache.log4j.ConsoleAppender(new SimpleLayout()));
 
-		List<Purchase> transactions = new ArrayList<Purchase>();
+		List<Purchase> transactions = new ArrayList<>();
 		
 		// read data from 4 files
 		readData("transactions1.csv",transactions);
